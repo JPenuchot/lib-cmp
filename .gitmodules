@@ -1,0 +1,3 @@
+[submodule "contrib/OpenBLAS"]
+	path = contrib/OpenBLAS
+	url = https://github.com/xianyi/OpenBLAS
