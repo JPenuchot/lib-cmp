@@ -11,7 +11,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 --std=c++14 -DNDEBUG")
 #	Adding includes
 
 include_directories(
-		#"../ext/boost_1_64_0"
 	"/usr/local/benchmark/include"
 	"../contrib/OpenBLAS/"
 )
