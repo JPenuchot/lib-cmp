@@ -1,0 +1,7 @@
+# Reports/Executables
+
+.build/
+bin/
+output/
+
+prog*
