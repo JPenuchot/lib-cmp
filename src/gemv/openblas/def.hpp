@@ -100,9 +100,9 @@ template< typename T
 		, std::size_t N
 		>
 static void gemv__pmat_r__openblas(benchmark::State& state) {
-	pg::pmat_r<T, M, N> mat;
-	pg::pvector<T, N> vec;
-	pg::pvector<T, M> res;
+	std::vector<T> mat(M * N);
+	std::vector<T> vec(N);
+	std::vector<T> res(M);
 	
 	std::iota(mat.begin(), mat.end(), 0);
 	std::iota(vec.begin(), vec.end(), 0);
