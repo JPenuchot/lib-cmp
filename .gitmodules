@@ -1,3 +1,6 @@
 [submodule "contrib/OpenBLAS"]
 	path = contrib/OpenBLAS
 	url = https://github.com/xianyi/OpenBLAS
+[submodule "contrib/benchmark"]
+	path = contrib/benchmark
+	url = https://github.com/google/benchmark
