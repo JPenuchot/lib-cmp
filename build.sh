@@ -43,7 +43,7 @@ cd ${CMAKE_BUILD_DIR}
 
 cmake ..
 make
-mv prog ../${OUTPUT_DIR}
+mv prog_repo ../${OUTPUT_DIR}
 
 
 cd ../..
@@ -76,6 +76,6 @@ cd ${CMAKE_BUILD_DIR}
 
 cmake ..
 make
-mv prog ../${OUTPUT_DIR}
+mv prog_source ../${OUTPUT_DIR}
 
 cd ../..

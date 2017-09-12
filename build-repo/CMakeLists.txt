@@ -10,9 +10,11 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 --std=c++14 -DNDEBUG")
 
 #	Adding includes
 
+find_package(OpenBLAS REQUIRED)
+
 include_directories(
-		#"../ext/boost_1_64_0"
-	"../contrib/benchmark/include"
+	"/usr/local/benchmark/include"
+	${OpenBLAS_INCLUDE_DIR}
 		#"../contrib/OpenBLAS/include"
 		#"../include"
 )
@@ -20,12 +22,13 @@ include_directories(
 #	Linking libraries
 
 link_directories(
-	#"../contrib/OpenBLAS/lib"
+	${OpenBLAS_LIB}
+	"/usr/local/lib"
 )
 link_libraries(
 	"benchmark"
 	"pthread"
-	#"openblas"
+	"openblas"
 )
 
 #	Adding sources

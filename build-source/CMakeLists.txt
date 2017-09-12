@@ -12,14 +12,15 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 --std=c++14 -DNDEBUG")
 
 include_directories(
 		#"../ext/boost_1_64_0"
-	"../contrib/benchmark/include"
-	"../contrib/OpenBLAS/include"
+	"/usr/local/benchmark/include"
+	"../contrib/OpenBLAS/"
 )
 
 #	Linking libraries
 
 link_directories(
-	"../contrib/OpenBLAS/lib"
+	"../contrib/OpenBLAS"
+	"/usr/local/lib"
 )
 link_libraries(
 	"benchmark"
